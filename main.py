@@ -5,6 +5,8 @@ def rollStat():
 		dice = random.randint(1, 6)
 		total += dice
 	return total
+
+print("BASTIONLAND CHARACTER GENERATOR")
 			
 statSTR = rollStat()
 print("Maximum Strength:\t" + str(statSTR) + " \t Current Strength:\t" + str(statSTR) )
