@@ -7,19 +7,19 @@ def rollStat():
 	return total
 
 print("BASTIONLAND CHARACTER GENERATOR")
-			
+print("\n")			
 statSTR = rollStat()
-print("Maximum Strength:\t" + str(statSTR) + " \t Current Strength:\t" + str(statSTR) )
+print("Maximum/Starting Strength:\t"+ str(statSTR))
 statDEX = rollStat()
-print("Maximum Dexterity:\t" + str(statDEX) + "\t Current Dexterity:\t" + str(statDEX) )
+print("Maximum/Starting Dexterity:\t"+ str(statDEX))
 statCHA = rollStat()
-print("Maximum Charisma:\t" + str(statCHA) + " \t Current Charisma:\t" + str(statCHA) )
-
+print("Maximum/Starting Charisma:\t" + str(statCHA))
 print("\n")
 
 print("Money (£):\t\t\t" + str(random.randint(1,6)))
 statHP = random.randint(1,6)
-print("Maximum HP:\t\t\t" + str(statHP) + "\t Current HP:\t\t" + str(statHP) )
+print("Maximum HP:\t\t\t" + str(statHP))
+print("Current HP:\t\t\t" + str(statHP) )
 
 print("\n")
 
@@ -45,7 +45,7 @@ elif max(statsList) == 17:
 elif max(statsList) == 18:
 	careerNumber = min(statsList) + 82
 
-print("Failed Career number based on Stats:\t\t" + str(careerNumber))
+print("Failed Career # (Stats based):\t" + str(careerNumber))
 
 careerNumberRandom = random.randint(1,100)
-print("Failed Career number based on D100 roll:\t" + str(careerNumberRandom))
+print("Failed Career # (D100 based):\t" + str(careerNumberRandom))
